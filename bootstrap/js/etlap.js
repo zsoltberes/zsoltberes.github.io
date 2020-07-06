@@ -4,9 +4,6 @@ if (document.readyState == 'loading') {
     ready()
 }
 
-window.oncontextmenu = function () {
-   return false;
-}
 
 function ready() {
     let removeCartItemButtons = document.getElementsByClassName('btn-danger')
