@@ -102,3 +102,5 @@ function updateCartTotal() {
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = total +'Ft' 
 }
+
+document.oncontextmenu = document.body.oncontextmenu = function() {return false;}
