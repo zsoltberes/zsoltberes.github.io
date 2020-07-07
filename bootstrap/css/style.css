@@ -8,10 +8,11 @@
     font-size: 17px;
   }
 
-  h1{
+  h1#h1Text{
     font-family: 'Yellowtail', cursive;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     margin-left: 20px;
+    text-align: left;
     
   }
   
