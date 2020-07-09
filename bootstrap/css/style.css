@@ -10,11 +10,31 @@
 
   h1#h1Text{
     font-family: 'Yellowtail', cursive;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
     margin-left: 20px;
     text-align: left;
+    margin-top: 10px;
     
   }
+  #homerseklet{
+    font-size: 110px;
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    font-family: -webkit-pictograph;
+    
+  }
+
+  h4{
+    font-family: 'Yellowtail', cursive;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin: 20px;
+    position: relative;
+    left: 80px;
+    
+  }
+    
+   
   
   #myVideo {
     position: fixed;
@@ -23,9 +43,6 @@
     min-width: 100%;
     min-height: 100%; 
   }
-    
-  
-    
   
   .content {
     position: fixed;
@@ -37,14 +54,18 @@
   }
   
   #myBtn {
-    width: 200px;
-    font-size: 18px;
+    width: 180px;
+    height: 48px;
+    font-size: 23px;
     padding: 10px;
     border: 0px;
-    border-radius: 10px;
-    background: #000;
+    text-align: center;
+    background: rgb(165, 165, 165);
     color: #fff;
     cursor: pointer;
+    margin-right: 220px;
+    margin-top: 8px;
+   
   }
   
   #myBtn:hover {
@@ -52,20 +73,121 @@
     color: black;
   }
 
+  select {
+    background: rgba(0, 0, 0, 0.5);
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-bottom: 40px;
+    
+  }
+
+  .col-sm-8{
+    border: solid 1px;
+    color: white;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    
+  }
+
+  .form-control{
+    width: 20%;
+    margin-left: 150px;
+    
+  }
+  
+  .container-fluid{
+    position: fixed;
+    bottom: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    
+  }
+
+ a {
+  font-family: 'Yellowtail', cursive;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  pointer-events: none;
+}
+  
+#ajanlat{
+  font-size: 50px;
+  margin-left: 100px;
+  
+}
+  
+
+#jo{
+margin-left: 200px;
+position: relative;
+top: 12px;
+left: 80px;
+
+}
+ 
+    
+   
+#ido{
+margin-left: 450px;
+position: relative;
+  top: 20px;
+  right: 10px;
+
+
+}  
+    
+    
+.col-6{
+  
+  color: rgba(255, 255, 255, 0.856);
+  
+}
+
+.col-8{
+   
+  color: rgba(255, 255, 255, 0.856);
+  
+  
+}
+.col-4{
+
+  
+    color: rgba(255, 255, 255, 0.856);
+    font-family: 'Yellowtail', cursive;
+    font-size: 22px;
+    
+}
+   
+
+
   .navbar{
     font-family: 'Yellowtail', cursive;
     font-size: x-large;
+    pointer-events: all;
+ 
+  }
+
+  .navbar-dark .navbar-nav .nav-link{
+    color: white;
   }
 
   .nav-link{
       font-size: x-large;
-      
-      
+      border-bottom: solid 1px;
+      pointer-events: all;
+      color: aliceblue;
   }
 
   .navbar-brand{
       font-size: xx-large;
-      
+      pointer-events: all;
+
+  }
+
+  .nav-item{
+    color: aliceblue;
   }
 
   .fa {
@@ -87,21 +209,21 @@
     color: white;
     margin-left: auto;
     margin-left: auto;
-    
+    pointer-events: all;
   }
 
   .fa-youtube {
     background: #bb0000;
     color: white;
     margin-left: 3px;
-    
+    pointer-events: all;
   }
 
   .fa-sign-in{
     color: white;
     background: #bb0000;
     margin-left: 3px;
-    
+    pointer-events: all;
   }
 
   .fa-sign-out{
@@ -109,7 +231,7 @@
     background: #bb0000;
     margin-right: auto;
     margin-left: 3px;
-    
+    pointer-events: all;
   }
 
 
@@ -164,7 +286,11 @@ tbody{
 }
   
 .btn{
-  margin-left: 40px;
+  margin-bottom: -40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin-left: 300px;
+    margin-top: 20px;
 }
 
 #tdM{
