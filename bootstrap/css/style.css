@@ -146,14 +146,14 @@ position: relative;
 }
 
 .col-8{
-   
+  border-top: solid 1px; 
   color: rgba(255, 255, 255, 0.856);
   
   
 }
 .col-4{
 
-  
+    border-top: solid 1px;
     color: rgba(255, 255, 255, 0.856);
     font-family: 'Yellowtail', cursive;
     font-size: 22px;
