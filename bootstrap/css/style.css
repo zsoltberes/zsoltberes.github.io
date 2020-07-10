@@ -17,10 +17,28 @@
     
   }
   #homerseklet{
-    font-size: 110px;
+    font-size: 100px;
     color: rgb(255, 255, 255);
-    margin-left: 100px;
+    position: relative;
+    right: 100px;
     font-family: -webkit-pictograph;
+    
+  }
+  
+  #far{
+    font-size: 100px;
+    position: relative;
+    right: 60px;
+    font-family: -webkit-pictograph;
+    color: rgb(255, 255, 255);
+  }
+
+  #ajanlat{
+    font-size: 80px;
+    position: relative;
+    right: 80px;
+    bottom: 40px;
+    text-align: center;
     
   }
 
@@ -112,11 +130,6 @@
   pointer-events: none;
 }
   
-#ajanlat{
-  font-size: 50px;
-  margin-left: 100px;
-  
-}
   
 
 #jo{
@@ -146,11 +159,11 @@ position: relative;
 }
 
 .col-8{
-  border-top: solid 1px; 
+   border-top: solid 1px;
   color: rgba(255, 255, 255, 0.856);
-  
-  
 }
+  
+  
 .col-4{
 
     border-top: solid 1px;
@@ -168,6 +181,7 @@ position: relative;
     pointer-events: all;
  
   }
+  
 
   .navbar-dark .navbar-nav .nav-link{
     color: white;
