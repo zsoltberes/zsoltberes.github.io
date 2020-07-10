@@ -11,9 +11,14 @@ let ajanlat = ["forró csoki",
 function idoApp() {
     let sel = document.querySelector('.form-control').value;
     let nap = document.querySelector('.kiVal');
+    let fa = document.querySelector('.f');
     let napAjanl = document.querySelector('.ajanlat');
     napAjanl.innerHTML = ajanlat[sel];
     nap.innerHTML = homersekletek[sel]+ '&deg;C'; 
+    fa.innerHTML = homersekletek[sel]* 9 / 5 + 32 + '&deg;F'; 
  
 }
+
+
     
+ 
