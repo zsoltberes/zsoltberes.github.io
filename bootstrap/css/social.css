@@ -1,0 +1,60 @@
+#face{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 5px; 
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  #you{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 5px; 
+  }
+  #in{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 5px; 
+  }
+  #out{
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 60px; 
+  }
+  
+  .fa:hover {
+      opacity: 0.9;
+  }
+  
+  .fa-facebook {
+    background: deepskyblue;
+    color: white;
+    
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-sign-out{
+    background: #ff6600;
+    color: white;
+    margin-right: 80px;
+  }
+  
+  .fa-sign-in{
+    background: #00b489;
+    color: white;
+  }
