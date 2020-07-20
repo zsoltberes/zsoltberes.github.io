@@ -8,8 +8,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/etlap.css">
   <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/navboot.css">
   <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/social.css">
   <script src="js/etlap.js" async></script>
@@ -17,7 +17,7 @@
 </head>
 
 <body oncontextmenu="return false;">
-
+  <button onclick="topFunction()" id="myBtn" ><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
   <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#">BURGERLAND</a>
     <button class="navbar-toggler" style="color: white; margin-right: 20px;  "  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,104 +63,505 @@
     </div>
   </nav>
   
-<section id="secT" class="container content-section">
-    <div class="shop-items">
-      <h2 class="section-header notranslate">SZENDVICSEK</h2>
-      <div class="shop-item">
-        <img class="shop-item-image" src="img/hamPNG.png">
-        <span class="shop-item-title notranslate">Gourmet burger</span>
-        <div class="shop-item-details">
-          <span class="shop-item-price">1200Ft</span>
-          <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
-        </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-item-image" src="img/hamPNG.png">
-        <span class="shop-item-title notranslate">Sima hamburger</span>
-        <div class="shop-item-details">
-          <span class="shop-item-price">500Ft</span>
-          <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
-        </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-item-image" src="img/hamPNG.png">
-        <span class="shop-item-title notranslate">Sajtburger</span>
-        <div class="shop-item-details">
-          <span class="shop-item-price">670Ft</span>
-          <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
-        </div>
-      </div>
-      <div class="shop-item">
-        <img class="shop-item-image" src="img/hamPNG.png">
-        <span class="shop-item-title notranslate">Zóna sajtburger</span>
-        <div class="shop-item-details">
-          <span class="shop-item-price">750Ft</span>
-          <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
-        </div>
-      </div>
-</section>
   
-<section class="container content-section">
-    <div class="shop-items">
-      <h2 class="section-header notranslate">ITALOK</h2>
-      <div class="shop-item">
-      <img class="shop-item-image" src="img/drinks.png">
-      <span class="shop-item-title notranslate">Sör</span>
-      <div class="shop-item-details">
-        <span class="shop-item-price">500Ft</span>
-        <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
-      </div>
+  <div  class="container">
+    <div id="felsJumbo" class="jumbotron">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link marli" href="#ital">Italok</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link marli" href="#feltet">Pizza</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link marli" href="#kosar">Kosár</a>
+        </li>
+      </ul>
     </div>
-    <div class="shop-item">
-      <img class="shop-item-image" src="img/drinks.png">
-      <span class="shop-item-title notranslate">Martini</span>
-      <div class="shop-item-details">
-        <span class="shop-item-price">900Ft</span>
-        <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
+    <h2>HAMBURGER</h2>
+    <img style="margin-bottom: 30px;" class="mx-auto d-block nyujt" src="/zsoltberes.github.io/bootstrap/img/kiss.png" alt="">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block " src="/zsoltberes.github.io/bootstrap/img/pngbarn.png">
+          <span class="shop-item-title notranslate">Sima hamburger</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">500Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="shop-item">
-      <img class="shop-item-image" src="img/drinks.png">
-      <span class="shop-item-title notranslate">Jagermeister</span>
-      <div class="shop-item-details">
-        <span class="shop-item-price">850Ft</span>
-        <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block " src="/zsoltberes.github.io/bootstrap/img/pngegggg.png">
+          <span class="shop-item-title notranslate">Gourmet burger</span>
+          <div class="shop-item-details ">
+            <span class="shop-item-price">1200Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/pngflow.png">
+          <span class="shop-item-title notranslate">Sajtburger</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">870Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/pngwave.png">
+          <span class="shop-item-title notranslate">Zóna sajtburger</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">670Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/pngwing.png">
+          <span class="shop-item-title notranslate">Big Mac</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">790Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/burgersandwich.png">
+          <span class="shop-item-title notranslate">Cheeseburger</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">970Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section>
-  
-<section class="container content-section">
-    <div class="shop-items">
-      <h2 class="section-header notranslate">FELTÉTEK</h2>
-      <div class="shop-item">
-      <img class="shop-item-image" src="img/6572392.png">
-      <span class="shop-item-title notranslate">Görög saláta</span>
-      <div class="shop-item-details">
-        <span class="shop-item-price">540 Ft</span>
-        <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
-      </div>
+       
+  <div class="container">
+    <div id="kozepJumbo" class="jumbotron">
+      <h2 id="ital">ITALOK</h2>
+      <img class="mx-auto d-block nyujt" src="/zsoltberes.github.io/bootstrap/img/kiss.png" alt="">
     </div>
-    <div class="shop-item">
-      <img class="shop-item-image" src="img/6572392.png">
-      <span class="shop-item-title notranslate">Cézár saláta</span>
-      <div class="shop-item-details">
-        <span class="shop-item-price">1900Ft</span>
-        <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/goldberg toni.png">
+          <span class="shop-item-title notranslate">Goldberg</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">450Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="shop-item">
-      <img class="shop-item-image" src="img/6572392.png">
-      <span class="shop-item-title notranslate">Steak burgonya</span>
-      <div class="shop-item-details">
-        <span class="shop-item-price">850Ft</span>
-        <button class="btn btn-primary shop-item-button" type="button">KOSÁRBA</button>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/pngbarnztu.png">
+          <span class="shop-item-title notranslate">Cola</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">970Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
       </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/Negroni.png">
+          <span class="shop-item-title notranslate">Negroni</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">1270Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
     </div>
   </div>
-</section>
+  
+  <div class="container">
+    <div id="alsoJumbo" class="jumbotron">
+      <h2 id="feltet">PIZZA</h2>
+      <img class="mx-auto d-block nyujt" src="/zsoltberes.github.io/bootstrap/img/kiss.png" alt="">
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/pizza szal.png">
+          <span class="shop-item-title notranslate">Szalámis</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">750Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/Pepperoni.png">
+          <span class="shop-item-title notranslate">Pepperoni</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">770Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/Russian.png">
+          <span class="shop-item-title notranslate">Russian</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">1270Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+    </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/Chicago.png">
+          <span class="shop-item-title notranslate">Chicago</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">1450Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+    </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/California.png">
+          <span class="shop-item-title notranslate">California</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">1170Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+    </div>
+      <div class="col-sm-4">
+        <div class="shop-item resultContainer ">
+          <img class="shop-item-image img-fluid rounded mx-auto d-block" src="/zsoltberes.github.io/bootstrap/img/kebab.png">
+          <span class="shop-item-title notranslate">Kebab</span>
+          <div class="shop-item-details">
+            <span class="shop-item-price">1110Ft</span>
+            <button class="btn btn-primary shop-item-button viewThisResult" type="button">KOSÁRBA</button>
+          </div>
+        </div>
+    </div>
+  </div>
 
-<section class="container content-section">
+  <h2 id="kosar">KOSÁR</h2>
+  <img class="mx-auto d-block nyujt" src="/zsoltberes.github.io/bootstrap/img/kiss.png" alt="">
+  <div class="left">
+    <div class="cart-items">
+    </div>
+  </div>
+  <div class="right">
+    <div class="cart-total">
+      <strong class="cart-total-title">VÉGÖSZEG</strong>
+      <span class="cart-total-price">0Ft</span>
+      <button class="btn btn-primary btn-purchase" type="button">VÁSÁRLÁS</button>
+    </div>
+  </div>
+  
+  
+  
+
+
+       
+
+
+<style>  
+
+p{
+  padding-top: 0px;
+  margin: 0px;
+}
+
+.nyujt{
+  width: 50%;
+}
+
+.marli{
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 1px;
+  font-size: 25px;
+  
+}
+
+.marli:hover{
+  text-decoration: none;
+  color: white;
+}
+
+.col-sm-4{
+  color: white;
+    
+}
+
+#felsJumbo{
+  background-color: rgba(22, 190, 36, 0);
+  margin-top: 30px;
+  padding: 80px 0px 0px 0px;
+}
+
+#kozepJumbo{
+  background-color: rgba(22, 190, 36, 0);
+  padding: 0px;
+}
+
+#alsoJumbo{
+  background-color: rgba(22, 190, 36, 0);
+  padding: 0px;
+}
+
+h2{
+  color: white;
+  font-family: 'Comic Neue', cursive;
+  text-align: center;
+  padding: 0px;
+  font-size: 27px;
+}
+
+body{
+ background-image: url(/zsoltberes.github.io/bootstrap/img/zoldseg.jpg);
+  
+}
+
+.shop-item-price{
+  color: white;
+  text-align: center;
+  display: block;
+  margin-top: 2px;
+  margin-bottom: 20px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 20px;
+
+}
+
+.shop-item-title{
+  color: white;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 20px;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #f4511e !important;
+  border-color: #f4511e !important;
+  border-radius: 2px !important;
+  padding: 10px 26px !important;
+}
+.btn-danger,
+.btn-danger:hover,
+.btn-danger:active,
+.btn-danger:visited,
+.btn-danger:focus {
+  background-color: #b41616 !important;
+  border-color: #b41616 !important;
+  border-radius: 2px !important;
+  padding: 10px 26px !important;
+}
+.btn-purchase,
+.btn-purchase:hover,
+.btn-purchase:active,
+.btn-purchase:visited,
+.btn-purchase:focus {
+  background-color: #1626b4 !important;
+  border-color: #1626b4 !important;
+  border-radius: 2px !important;
+  padding: 10px 26px !important;
+}
+
+img{
+  width: 50%;
+}
+
+div.shop-item{
+  /* border: solid rgb(255, 255, 255) 1px;  */
+  border-radius: 5px;
+  margin-bottom: 20px;
+  height: 380px;
+  
+}
+
+.row{
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div.shop-item:hover{
+  transform: scale(1.08);
+  z-index: 2;
+  box-shadow: 0px 0px 8px 1px white;
+  border-radius: 5px;
+  transition: 1.0s;
+  
+}
+ 
+.resultContainer .viewThisResult {
+  display: none;
+}
+.resultContainer:hover .viewThisResult {
+  display: block;
+  margin: auto;
+  transition: 1.0s;
+  transition-delay: 1.0s; 
+}  
+
+@media screen and (max-width:800px) {
+.resultContainer .viewThisResult{
+  display: block;
+  margin: auto;
+}
+}
+  
+@media screen and (max-width:800px) {
+  div.shop-item{
+  transition: 0s;
+  border: 1px solid white;
+  box-shadow: 0px 0px 8px 1px white;
+  border-radius: 5px;
+    
+  }
+}
+  
+.cart-item-image {
+  width: 60px;
+  height: 60px;
+    
+}
+
+.left {
+  background-color:#00000052;
+  float:left;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px 1px white;
+  padding: 5px;
+  width:100%; 
+  margin-top: 30px;
+}
+
+.right {
+  background-color:#00000052;
+  padding: 5px;
+  box-shadow: 0px 0px 8px 1px white;
+  float:left;
+  width:100%; 
+}
+
+@media screen and (max-width:800px) {
+  .left, .right {
+    width:100%; 
+  }
+}
+
+.cart-row{
+  font-family: 'Comic Neue', cursive;
+  color: #f1f1f1;
+  display: flex;
+}
+  
+.btn-danger{
+  margin-right: 10px;
+}
+ 
+.cart-total{
+  font-family: 'Comic Neue', cursive;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+ 
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.cart-total {
+  text-align: end;
+}
+
+.cart-total-title {
+  font-size: 1.5em;
+  color: #f1f1f1;
+}
+
+.cart-total-price {
+  color: #f1f1f1;
+  font-size: 1.5em;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.cart-column {
+  padding-left: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.5em;
+  color: #f1f1f1;
+  padding-top: 45px;
+}
+
+.cart-quantity {
+  width: 25%;
+  padding-top: 45px;
+  margin-left: 20px;
+}
+
+.cart-item-title {
+  color: #f1f1f1;
+  margin-right: 10px;
+  display: list-item;
+  font-size: 1.5em;
+  list-style: none;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  z-index: 99;
+  font-size: 22px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 102, 0);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+</style>
+  
+<!-- <section class="container content-section">
     <h2 id="kosarID" class="section-header">KOSÁR</h2>
     <div class="cart-row">
       <span class="cart-item cart-header cart-column">TERMÉK</span>
@@ -174,7 +575,29 @@
       <span class="cart-total-price">0Ft</span>
       <button class="btn btn-primary btn-purchase" type="button">VÁSÁRLÁS</button>
     </div>
-</section>
+</section>-->
+
+<script>
+
+  var mybutton = document.getElementById("myBtn");
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  
+</script>
+  
+  
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -184,6 +607,78 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+  
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+    
+    
+   
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
 
 
   
