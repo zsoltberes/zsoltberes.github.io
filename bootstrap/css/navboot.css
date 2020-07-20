@@ -1,7 +1,7 @@
 .navbar-brand{
     font-size: 40px;
     color: white !important;
-    font-family: 'Yellowtail', cursive; 
+    font-family: 'Comic Neue', cursive;
     padding-left: 20px;
     cursor: text;
     
@@ -16,7 +16,8 @@
 
 .nav-link{
     font-size: 20px;
-    font-family: 'Yellowtail', cursive;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
     color: white;  
 }
 
@@ -24,14 +25,31 @@
     margin: 0 auto !important;
 }
 
-nav ul li a:hover{
+/* nav ul li a:hover{
     color: #fff; 
-    background: rgb(40, 202, 19);
+    background: rgb(40, 202, 19); */
+    
+
+
+nav ul li a:hover{
+    transform: scale(1.04);
+    color: #fff; 
+    background: #008CBA;
+    z-index: 2;
+    box-shadow: 0px 0px 0px 1px  rgb(255, 255, 255);
+    border-radius: 3px;
+   
     
 }
+   
+
+
+
 
 nav ul li a#wer{
-    background: rgb(40, 202, 19);
+    background: #008CBA;
+    box-shadow: 0px 0px 0px 1px  rgb(255, 255, 255);
+    border-radius: 3px;
      
     
 }
