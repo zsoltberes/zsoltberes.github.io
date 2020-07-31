@@ -65,10 +65,10 @@
         
         
         <div class="container">
-            <div id="login" class="row">
-                <div class="col-4">
+            <div id="login" class="">
+                <div class="col">
                         <P>BELÉPÉS</P>
-                        <form class="form-horizontal">
+                        <form class="">
                         <div class="form-group">
                             <label for="exampleInputEmail1">EMAIL CÍM</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -86,7 +86,7 @@
                     </form>
                 </div>
                 
-                <div class="col-4" id="login">
+                <div class="col" id="login">
                     <section id="inner-wrapper" class="login">
                        <P>REGISZTRÁCIÓ</P>
                             <form>
@@ -130,10 +130,44 @@
 
 
 <style>
-@media screen and (max-width:990px) {
+
+  
+
+@media screen and (max-width:1920px) {
 .container{
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+    width:40%; 
+    display: table;
   }
+  
+}
+
+@media screen and (max-width:1400px) {
+.container{
+    width:50%; 
+    display: table;
+  }
+  
+}
+@media screen and (max-width:900px) {
+.container{
+    width:70%; 
+    display: table;
+  }
+  
+}
+@media screen and (max-width:425px) {
+.container{
+    width:80%; 
+    display: table;
+  }
+  
+}
+@media screen and (max-width:375px) {
+.container{
+    width:100%; 
+    display: table;
+  }
+  
 }
 
 
