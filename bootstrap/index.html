@@ -2,119 +2,975 @@
 <html lang="hu-hu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/navboot.css">
-    <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/kezdo.css">
-     <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/social.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/navboot.css">
+  <!-- <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/kezdo.css"> -->
+  <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/css/social.css">
+  <link rel="stylesheet" href="/zsoltberes.github.io/bootstrap/node_modules/animate.css/animate.min.css">
   <title>BG|Kezdőoldal</title>
 </head>
 
+
+
 <body onload="idoApp()">
-    
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand" href="#">BURGERLAND</a>
-        <button class="navbar-toggler" style="margin-right: 20px;  "  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="" style="color: white;"><i class="fa fa-bars" aria-hidden="true"></i></span>
-        </button>
+
+  <nav class="navbar navbar-expand-lg fixed-top">
+
+    <a class="navbar-brand" href="#">BURGERLAND</a>
+
+    <button class="navbar-toggler" 
+            style="margin-right: 20px;" 
+            type="button" 
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <span class="" style="color: white;">
+              <i class="fa fa-bars" aria-hidden="true">
+              </i>
+            </span>
+
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a id="wer" class="nav-link" style="padding-left: 20px; padding-right: 20px;"
+            href="/zsoltberes.github.io/bootstrap/index.html">KEZDŐOLDAL</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 20px; padding-right: 20px;"
+            href="/zsoltberes.github.io/bootstrap/elerhetosegek.html">KAPCSOLAT</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 20px; padding-right: 20px;"
+            href="/zsoltberes.github.io/bootstrap/akciok.html">AKCIÓ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 20px; padding-right: 20px;"
+            href="/zsoltberes.github.io/bootstrap/etlap.html">ÉTLAP</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" style="padding-left: 20px; padding-right: 20px;"
+            href="/zsoltberes.github.io/bootstrap/rolunk.html">RÓLUNK</a>
+        </li>
+
+      </ul>
+
+      <a id="face" target="blank" href="https://hu-hu.facebook.com/" class="fa fa-facebook"></a>
+      <a id="you" target="blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
+      <a id="in" href="/zsoltberes.github.io/bootstrap/belepes.html" class="fa fa-sign-in"></a>
+      <a id="out" href="/zsoltberes.github.io/bootstrap/index.html" class="fa fa-sign-out"></a>
+
+    </div>
+
+  </nav>
+
+  <header class="nav" style="margin-top: 70px;">
+
+    <div class="left" style="background-color: rgb(43, 43, 43); 
+                             color: rgb(161, 161, 161); 
+                             border-top: solid 1px rgb(161, 161, 161);">
+      <ul id="menu">
+
+        <li>
+          <h4 style="margin-right: 2px; 
+                     font-family: 'Poppins', sans-serif; 
+                     text-transform: uppercase; ">Időjárás
+          </h4>
+        </li>
+
+        <li>
+          <form style="display: inline;" action="">
+            <select class="form-control" 
+                       id="nap" 
+                    style="width: 100px; 
+                           border-radius: 0px; 
+                           border-color: rgb(0, 0, 0) ;">
+              <option value="0">Hétfő</option>
+              <option value="1">Kedd</option>
+              <option value="2">Szerda</option>
+              <option value="3">Csütörtök</option>
+              <option value="4">Péntek</option>
+              <option value="5">Szombat</option>
+              <option value="6">Vasárnap</option>
+            </select>
+          </form>
+        </li>
+
+        <li>
+          <button style="margin-bottom: 5px; 
+                         margin-left: 5px;" 
+                  class="btn btn-danger" 
+                     id="btn-info" 
+                onclick="idoApp()">Mutasd
+          </button>
+        </li>
         
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a id="wer" class="nav-link" style="padding-left: 20px; padding-right: 20px;" href="/zsoltberes.github.io/bootstrap/index.html">KEZDŐOLDAL</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="padding-left: 20px; padding-right: 20px;" href="/zsoltberes.github.io/bootstrap/elerhetosegek.html">KAPCSOLAT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="padding-left: 20px; padding-right: 20px;" href="/zsoltberes.github.io/bootstrap/akciok.html">AKCIÓ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="padding-left: 20px; padding-right: 20px;" href="/zsoltberes.github.io/bootstrap/etlap.html">ÉTLAP</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" style="padding-left: 20px; padding-right: 20px;" href="/zsoltberes.github.io/bootstrap/rolunk.html">RÓLUNK</a>
-              </li>
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
-            </ul>
-            <a  id="face" target="blank" href="https://hu-hu.facebook.com/" class="fa fa-facebook"></a>
-            <a  id="you" target="blank" href="https://www.youtube.com/" class="fa fa-youtube"></a>
-            <a  id="in" href="/zsoltberes.github.io/bootstrap/belepes.html" class="fa fa-sign-in"></a>
-            <a  id="out" href="/zsoltberes.github.io/bootstrap/index.html" class="fa fa-sign-out"></a> 
-            
+      </ul>
+    </div>
+
+    <div class="main" style="background-color: rgb(43, 43, 43); 
+                             color: rgb(161, 161, 161); 
+                             font-size: 25px; 
+                             border-top: solid 1px rgb(161, 161, 161);">
+
+            <span style="margin-right: 20px;" class="kiVal" id="homerseklet">0&degC</span>
+            <span class="f" id="far">F</span>
+    </div>
+
+    <div class="right" style="background-color: rgb(43, 43, 43); 
+                              color: rgb(161, 161, 161);  
+                              font-size: 25px; 
+                              text-transform: uppercase; 
+                              border-top: solid 1px rgb(161, 161, 161);">
+
+           <span class="ajanlat" id="ajanlat"></span>
+    </div>
+
+  </header>
+
+  
+  <div class="carousel slide carousel-fade" id="main-carousel" data-interval="10000" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+      <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#main-carousel" data-slide-to="1"></li>
+      <li data-target="#main-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+
+        <picture>
+          <source srcset="/zsoltberes.github.io/bootstrap/img/ham1.jpg" media="(min-width: 1400px)">
+          <source srcset="/zsoltberes.github.io/bootstrap/img/ham2.jpg" media="(min-width: 769px)">
+          <source srcset="/zsoltberes.github.io/bootstrap/img/ham3.jpg" media="(min-width: 577px)">
+          <img srcset="/zsoltberes.github.io/bootstrap/img/hamb4.jpg" alt="responsive image" class="d-block img-fluid">
+        </picture>
+
+        <div class="carousel-caption">
+          <h6 style="animation-delay: 1s;" class="animate__animated animate__zoomIn">Ünnepi kínálatunk
+            <br>
+            <a href="/zsoltberes.github.io/bootstrap/akciok.html" style="font-size: 20px; 
+                    animation-delay: 3s; --animate-duration: .8s; " role="button" type="button" class="btn btn-light animate__animated
+                     animate__lightSpeedInRight">Akció</a></h6>
         </div>
-      </nav>
+
+      </div>
+
+      <div class="carousel-item">
+
+        <picture>
+          <source srcset="/zsoltberes.github.io/bootstrap/img/piz1.jpg" media="(min-width: 1400px)">
+          <source srcset="/zsoltberes.github.io/bootstrap/img/piz2.jpg" media="(min-width: 769px)">
+          <source srcset="/zsoltberes.github.io/bootstrap/img/piz3.jpg" media="(min-width: 577px)">
+          <img srcset="/zsoltberes.github.io/bootstrap/img/piz4.jpg" alt="responsive image" class="d-block img-fluid">
+        </picture>
+
+        <div class="carousel-caption">
+
+          <h6 style="animation-delay: 1s;" class="animate__animated animate__zoomIn">pizza
+            <p class="animate__animated animate__zoomIn" style="font-size: 30px; animation-delay: 2s;">
+              különlegességek !<br> <img class="animate__animated animate__lightSpeedInRight"
+                style="margin-top: 10px; animation-delay: 3s;" src="/zsoltberes.github.io/bootstrap/img/art pizza.png"
+                alt="" width="250px" height="150px"></p>
+          </h6>
+
+        </div>
       
-     
-            <video autoplay muted loop id="myVideo">
-                 <source src="/zsoltberes.github.io/bootstrap/video/Food slow motion (2).mp4" type="video/mp4">
-            </video> 
-            
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-sm">
-                    <button id="myBtn" onclick="myFunction()">Pause</button>
-                  </div>
-                  <div class="col-sm">
-                      <form action="">
-                          <select id="nap" class="form-control">
-                              <option value="0">Hétfő</option>
-                              <option value="1">Kedd</option>
-                              <option value="2">Szerda</option>
-                              <option value="3">Csütörtök</option>
-                              <option value="4">Péntek</option>
-                              <option value="5">Szombat</option>
-                              <option value="6">Vasárnap</option>
-                            </select>
-                        </form>
-                        <button class="btn btn-info" id="btn-info" onclick="idoApp()">Mutasd
-                        </button>  
-                  </div>
-                  <div class="col-sm">
-                    <span class="kiVal" id="homerseklet">0&degC</span>
-                    <span class="f" id="far">F</span>
-                  </div>
-                  <div class="col-sm">
-                    <span class="ajanlat" id="ajanlat"></span>
-                  </div>
-                </div>  
-              </div>
+      </div>
+
+      <div class="carousel-item">
+
+        <picture>
+          <source srcset="/zsoltberes.github.io/bootstrap/img/Tea1.jpg" media="(min-width: 1400px)">
+          <source srcset="/zsoltberes.github.io/bootstrap/img/Tea2.jpg" media="(min-width: 769px)">
+          <source srcset="/zsoltberes.github.io/bootstrap/img/Tea3.jpg" media="(min-width: 577px)">
+          <img srcset="/zsoltberes.github.io/bootstrap/img/Tea4.jpg" alt="responsive image" class="d-block img-fluid">
+        </picture>
+
+        <div class="carousel-caption">
+
+          <h6 style="animation-delay: 1s;" class="animate__animated animate__zoomIn">különleges italok
+            <p class="animate__animated animate__zoomIn" style="font-size: 30px; animation-delay: 2s;">
+              nézzen be hozzánk !<br>
+              <a href="/zsoltberes.github.io/bootstrap/etlap.html#ital" style="font-size: 20px; 
+                    animation-delay: 3s; --animate-duration: .8s; " role="button" type="button" class="btn btn-light animate__animated
+                     animate__lightSpeedInRight">Italok</a></p>
+          </h6>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div style="width: 100%; height: 70px; padding: 0; background-color: rgb(43, 43, 43);" class="col"></div>
+
+                 
+  <a id="bigBtn" type="button" data-toggle="collapse" href="#bigBtnT">
+    <div style="font-size: 35px;">hamburger
+      <i style="position: relative ; left: 10%;" id="icon" class="fa fa-plus-circle">
+      </i>
+    </div>
+  </a>
+  
+  <div class="collapse"  id="bigBtnT" style="overflow: hidden;  
+              background-color: rgba(126, 126, 126, 0.336); 
+              background-image: url(/zsoltberes.github.io/bootstrap/img/haterhamb.png);">
+    
+    <div class="container">
+    
+      <div class="col-1"></div>
+
+        <img style="margin: 30px 0px; box-shadow: 0 0 14px 3px black ;"
+             class="mx-auto d-block" 
+               src="/zsoltberes.github.io/bootstrap/img/hamburger_3.png" 
+             width="30%" 
+               alt=""> 
+    
+          <div class="col-10 szoveg" style="text-align: center; display: contents; align-items: center; color: rgb(0, 0, 0); font-weight: 600;">
+
+           <h1 style="margin-bottom: 20px;">Grill Sajtos</h1> 
+           <p>A bucikat középen kettévágjuk, grillen megpirítjuk a belső oldalukat.
+           A bacon szeleteket serpenyőben vagy kontakt grillen megsütjük, a lilahagymát
+           felszeleteljük, a sajtokat egyszer átfordítva meggrillezzük.
+            </p>
+            <h1>Összeállítás</h1>
+            <p>A buci alsó felét megkenjük gazdagon majonézzel, rátesszük a rukkolát,
+              erre fektetjük a grillezett sajtot, megkenjük áfonyalekvárral, rátesszük a
+              sült bacont, majd a lilahagyma szelteket és végül beborítjuk a majonézzel megkent buci tetejével.</p>
+            <h1 style="margin-bottom: 20px;">Hozzávalók</h1>
+            <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+              <li>4 db hamburger buci</li>
+              <li>8 szelet bacon</li>
+              <li>1 fej lilahagyma</li>
+              <li>4 db Tihany grill camembert</li>
+              <li>rukkola</li>
+              <li>4 ek majonéz</li>
+              <li>4 ek vörösáfonya-lekvár</li>
+            </ul>
+
+          </div>
+
+        <div class="col-1"></div>
+
+      </div>      
+  </div>
+
+
+  <a id="bigBtn1" type="button" data-toggle="collapse" href="#bigBtnTartalom">
+    <div style="font-size: 35px;">deszert
+      <i style="position: relative ; left: 20%;" id="icon1" class="fa fa-plus-circle">
+      </i>
+    </div>
+  </a>
+  
+  <div class="collapse"  id="bigBtnTartalom" style="overflow: hidden;  
+              background-color: rgba(126, 126, 126, 0.336); 
+              background-image: url(/zsoltberes.github.io/bootstrap/img/haterhamb.png);">
+    
+    <div class="container">
+    
+      <div class="col-1"></div>
+
+        <img style="margin: 40px 0px; box-shadow: 0 0 14px 3px black;"
+             class="mx-auto d-block" 
+               src="/zsoltberes.github.io/bootstrap/img/eper.jpg" 
+             width="30%" 
+               alt=""> 
+    
+          <div class="col-10 szoveg" style="text-align: center; display: contents; align-items: center; color: rgb(0, 0, 0); font-weight: 600;">
+
+           <h1 style="margin-bottom: 20px;">Epergolyó</h1> 
+           <p>A megmosott, kicsumázott és lecsepegtetett epret villával összetörjük,
+            majd hozzáadjuk a sűrített tejet és a zabpelyhet.
+            Összegyúrjuk, majd kb. 10-15 percre a hűtőbe tesszük.
+            Ezután a masszából golyókat formázunk, és meghempergetjük
+            mindet kókuszreszelékben. Tálalásig hűtőben tartjuk.
+            </p>
+      
+            <h1 style="margin-bottom: 20px;">Hozzávalók</h1>
+            <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+              <li>30 dkg eper</li>
+              <li>1 tubus sűrített tej</li>
+              <li>20 dkg zabpehely (gm)</li>
+              <li>kókuszreszelék</li>
+            </ul>
+
+          </div>
+
+        <div class="col-1"></div>
+
+      </div>      
+  </div>
+
+  
+  <a id="bigBtn2" type="button" data-toggle="collapse" href="#bigBtnTartalom2">
+    <div style="font-size: 35px;">pizza
+      <i style="position: relative ; left: 20%;" id="icon2" class="fa fa-plus-circle">
+      </i>
+    </div>
+  </a>
+
+  <div class="collapse"  id="bigBtnTartalom2" style="overflow: hidden;  
+              background-color: rgba(126, 126, 126, 0.336); 
+              background-image: url(/zsoltberes.github.io/bootstrap/img/haterhamb.png);">
+    
+    <div class="container">
+    
+      <div class="col-1"></div>
+
+        <img style="margin: 40px 0px; box-shadow: 0 0 14px 3px black ;"
+             class="mx-auto d-block" 
+               src="/zsoltberes.github.io/bootstrap/img/croppedpizza.png" 
+             width="30%" 
+               alt=""> 
+    
+          <div class="col-10 szoveg" style="text-align: center; display: contents; align-items: center; color: rgb(0, 0, 0); font-weight: 600;">
+
+           <h1 style="margin-bottom: 20px;">Egyszerű Pizza Tészta</h1> 
+           <p>A lisztet az élesztővel összemorzsoljuk, beletesszük a sót, a cukrot és az olajat, 
+            majd összedolgozzuk annyi langyos vízzel, hogy összeállon a tészta (kb. 2,5 dl). 
+            Lisztezett felületen kinyútjuk a tésztát 1 cm vastagra, és meghintünk liszttel egy nagy méretű tepsit. 
+            Beletesszük a tésztát, és megrakjuk ízlés szerinti feltéttel (paradicsom szósz, sonka, szalámi, sajt).
+            220 fokra előmelegített sütőben 12-15 perc alatt készre sütjük.
+            </p>
+      
+            <h1 style="margin-bottom: 20px;">Hozzávalók</h1>
+            <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+              <li>40 dkg liszt (+ a nyújtáshoz)</li>
+              <li>5 dkg élesztő</li>
+              <li>1 kávéskanál só</li>
+              <li>1 kávéskanál cukor</li>
+              <li>2 ek olaj</li>
+              <li>viz</li>
+            </ul>
+
+          </div>
+
+        <div class="col-1"></div>
+
+      </div>      
+  </div>     
+
+
+  <a id="bigBtn3" type="button" data-toggle="collapse" href="#bigBtnTartalom3">
+    <div style="font-size: 35px;">koktél
+      <i style="position: relative; left: 20%;" id="icon3" class="fa fa-plus-circle">
+      </i>
+    </div>
+  </a>
+
+  <div class="collapse"  id="bigBtnTartalom3" style="overflow: hidden;  
+              background-color: rgba(126, 126, 126, 0.336); 
+              background-image: url(/zsoltberes.github.io/bootstrap/img/haterhamb.png);">
+    
+    <div class="container">
+    
+      <div class="col-1"></div>
+
+        <img style="margin: 40px 0px; box-shadow: 0 0 14px 3px black ;"
+             class="mx-auto d-block" 
+               src="/zsoltberes.github.io/bootstrap/img/dinye.png" 
+             width="30%" 
+               alt=""> 
+    
+          <div class="col-10 szoveg" style="text-align: center; display: contents; align-items: center; color: rgb(0, 0, 0); font-weight: 600;">
+
+           <h1 style="margin-bottom: 20px;">Görögdinnyés Koktél</h1> 
+           <p>A görögdinnyét még fagyosan turmixba tesszük, és addig daráljuk, 
+              amíg kásás nem lesz.
+              Hozzáadjuk a lime kifacsart levét, az áfonyalevet, a gint és a bodzalikőrt. 
+              Összekeverjük, poharakba töltjük, és mentalevéllel dísíztjük.
+            </p>
+      
+            <h1 style="margin-bottom: 20px;">Hozzávalók</h1>
+            <ul style="list-style: none; padding: 0; margin-bottom: 40px;">
+              <li>2 bögre görögdinnye (fagyasztott)</li>
+              <li>1 db lime leve</li>
+              <li>1/4 bögre áfonyalé</li>
+              <li>2 dl gin</li>
+              <li>1 dl bodzalikőr</li>
+              <li>2 db mentalevél</li>
+            </ul>
+
+          </div>
+
+        <div class="col-1"></div>
+
+      </div>      
+  </div>     
+    
+  <div  class="row tortenet">
+      <h3 style="text-align: center; margin-bottom: 10px;">Történetünk</h3>
+          <p> A Lorem Ipsum szövegrészeinek sokféle változata elérhető, de a
+            többség valamilyen formában megváltozott, befecskendezett humorral
+            vagy véletlenszerű szavakkal, amelyek még enyhén hihetetlenek sem.
+            Ha A Lorem Ipsum szövegrészeinek sokféle változata elérhető, de a
+            többség valamilyen formában megváltozott, befecskendezett humorral
+            vagy véletlenszerű szavakkal, amelyek még enyhén hihetetlenek sem.
+            A Lorem Ipsum szövegrészeinek sokféle változata elérhető, de a
+           többség valamilyen formában megváltozott, befecskendezett humorral
+           vagy véletlenszerű szavakkal, amelyek még enyhén hihetetlenek sem.
+          </p>
+  </div>
+  
+  
+  <div class="col" style="width: 100%; height: 60px; background-color:#838383;"></div>
+  
+  <div style="padding: 0;" class="col">
+      <div style="height: 330px; padding: 10px;" class="left">
+        <div class="col alsoDoboz">
+          <h4 style="text-align: center; margin-bottom: 10px;">Cégünk</h4>
+            <h5>Title description, Sep 2, 2017</h5>
+              <a style=" font-weight: bolder; color: rgb(248, 149, 0);" 
+                 link rel="stylesheet" 
+                 href="/zsoltberes.github.io/bootstrap/elerhetosegek.html">Sunt in culpa qui officia
+              </a>
+                <p style="text-align: justify; margin-top: 10px;">
+                   Sunt in culpa qui officia deserunt mollit anim id est
+                   laborum consectetur adipiscing
+                   elit, sed do eiusmod tempor incididunt ut labore et
+                   dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud
+                   exercitation ullamco. dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud
+                   exercitation ullamco.
+                </p>
+        </div>
+      </div>
+  
+      <div style="height: 330px; padding: 10px;" class="main">
+        <div class="col alsoDoboz">
+                    <h4>Kapcsolat</h4>
+                <p style="margin-bottom: 3px;">Üzemeltető:
+                  Akarmi-Line Kft.
+                  Varos, Jókai  utca 00. 0000
+                </p>
+                    <h4>Elérhetőség</h4>
+            <ul style="text-align: left;">
+              <li>E-mail: info@akarmi.hu</li>
+              <li>Facebookon :<a style="color: rgb(248, 149, 0);" href=""> akarmi.hu ételrendelő portál facebook oldala</a></li>
+              <li>Blog :<a style="color: rgb(248, 149, 0);" href=""> akarmi.hu ételrendelő portál blogja</a></li>
+              <li>Ügyfélszolgálat: +00 0 000 00 00 - Minden nap 9:00-23:00 között</li>
+            </ul>
+        </div>
+      </div>
+  
+      <div style="padding: 10px; height: 330px;" class="right">
+        <div class="col alsoDoboz">
+          <h4>Kollégáink</h4>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                  <li>Big John:<a style="color: rgb(248, 149, 0);" href=""> Portfólió</a></li>
+                  <li>Ashúr Utumel:<a style="color: rgb(248, 149, 0);" href=""> Mester szakács blogja</a></li>
+                  <li>Thusa Zibálél:<a style="color: rgb(248, 149, 0);" href=""> Séfünk facebook oldala</a></li>
+                  <li>Bakán Quaragis:<a style="color: rgb(248, 149, 0);" href=""> Szakmai blogjaink</a></li>
+                </ul> 
+                <h4 style="text-align: center; margin: 10px 10px;">Kuktáink</h4>
+                <ul style="text-align: center; list-style: none; padding: 0;">
+                  <li>UpHak Gepel:<a style="color: rgb(248, 149, 0);" href=""> facebook oldala</a></li>
+                  <li>Molosa Nun-Dak:<a style="color: rgb(248, 149, 0);" href=""> facebook oldala</a></li>
+                </ul> 
             </div>
-   
+          </div>
+        
+      </div>
+                
+                    
+                
+              
+  
+  <div class="row alairas"><h3 style="font-size: 1em;">Készítette Béres Zsolt</h3></div>
 
     
+<style>
+    *{
+      box-sizing: border-box;
+    }
+
+    @media screen and (min-width: 601px) {
+      div.szoveg {
+        font-size: 1.3rem;
+
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .szoveg {
+        font-size: 1rem;
+      }
+        
+      h1{
+        font-size: 2.5rem;
+      }  
+
+      .mx-auto{
+        width: 60%;
+      }
+
+    }
+    
+    @media screen and (min-width: 601px) {
+      .alsoDoboz {
+        font-size: 1rem;
+      }
+
+    }
+
+    @media screen and (max-width: 1800px) {
+      .alsoDoboz {
+        font-size: .9rem;
+      }
+
+    }
+
+    @media screen and (max-width: 1400px) {
+      .alsoDoboz {
+        font-size: .8rem;
+      }
+
+    }
+
+    @media screen and (max-width: 1200px) {
+      .alsoDoboz {
+        font-size: .7rem;
+      }
+
+    }
+    @media screen and (max-width: 768px) {
+      .alsoDoboz {
+        font-size: .9rem;
+      }
+
+    }
+
+    @media screen and (max-width: 425px) {
+      .alsoDoboz {
+        font-size: .8rem;
+      }
+
+    }
+
+    .alairas{
+      width: 100%; height: 80px; 
+      background-color:#838383; 
+      color: white; 
+      padding: 40px; 
+      margin: 0px;
+    }
+
+    .alsoDoboz{
+      background-color: rgb(43, 43, 43); 
+      color: rgb(161, 161, 161); 
+      padding: 20px; 
+      width: 90%; 
+      height: 310px;  
+      margin: auto;
+    }
+
+    .tortenet{
+      overflow: auto;
+      font-family: 'Poppins', sans-serif; 
+      text-align: justify; width: 100%;  
+      padding: 50px 200px 50px 200px; margin: 0px; 
+      background-color: rgb(43, 43, 43); 
+      color: rgb(161, 161, 161);
+    }
+
+    @media screen and (max-width: 800px) {
+      .tortenet {
+         padding: 50px 100px 50px 100px;
+      }
+
+    }
+    @media screen and (max-width: 450px) {
+      .tortenet {
+         padding: 50px 50px 50px 50px;
+      }
+    }
+    
+    .fa-plus-circle {
+      transform: rotate(0deg);
+      transition: transform .4s linear;
+    }
+
+    .fa-plus-circle.open {
+      transform: rotate(340deg);
+      transition: transform .4s linear;
+    }
+
+    .carousel-item .img-fluid {
+      width: 100%;
+    }
 
 
+    #menu {
+      text-align: center;
+      padding: 4px;
+
+    }
+
+    ul#menu li {
+      display: inline-block;
+    }
+
+    .left {
+      background-color: #838383;
+      padding: 20px;
+      float: left;
+      width: 33.33%;
+      padding: 2px;
+      color: rgb(0, 0, 0);
+      height: 50px;
+    }
+
+    .main {
+      background-color: #838383;
+      padding: 2px;
+      float: left;
+      text-align: center;
+      width: 33.33%;
+      height: 50px;
+      color: rgb(0, 0, 0);
+    }
+
+    .right {
+      background-color: #838383;
+      padding: 2px;
+      float: left;
+      text-align: center;
+      width: 33.33%;
+      height: 50px;
+      color: rgb(0, 0, 0);
+    }
+
+    @media screen and (max-width:990px) {
+      .left,
+      .main,
+      .right {
+        width: 100%;
+      }
+    }
+
+    .btn-light,
+    .btn-light:hover,
+    .btn-light:active,
+    .btn-light:visited,
+    .btn-light:focus {
+      background-color: #ff912a !important;
+      border-color: #ff912a !important;
+      border-radius: 0px !important;
+      color: white !important;
+      width: 200px;
+      margin: 6px;
+    }
+
+    .btn-danger,
+    .btn-danger:hover,
+    .btn-danger:active,
+    .btn-danger:visited,
+    .btn-danger:focus {
+      background-color: #1a7eb8 !important;
+      border-color: #1a7eb8 !important;
+      border-radius: 0px !important;
+      color: white !important;
+      width: 65px;
+      height: 38px;
+      padding: 0px 4px;
+    }
+ 
+    #bigBtn{
+      border-top: solid 1px;  
+      width: 100%; height: 120px; 
+      text-align: center; 
+      text-transform: uppercase;
+    }
+    
+
+    #bigBtn,
+    #bigBtn:hover,
+    #bigBtn:active,
+    #bigBtn:visited,
+    #bigBtn:focus {
+      color: rgb(161, 161, 161);
+      border-color: #a3a3a3 !important;
+      border-radius: 0px !important;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px;
+      font-weight: bold;
+      background-color: white;
+      
+    }
 
 
+    #bigBtn:hover {
+      background-image: url(/zsoltberes.github.io/bootstrap/img/hamburgerswallpapers.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 4s ease;
+      color: rgb(199, 199, 199);
+      text-decoration: none;
+    }
+
+    #bigBtn1{
+      border-top: solid 1px; 
+      width: 100%; 
+      height: 120px; 
+      text-align: center; 
+      text-transform: uppercase;
+    }
+     
+    #bigBtn1,
+    #bigBtn1:hover,
+    #bigBtn1:active,
+    #bigBtn1:visited,
+    #bigBtn1:focus {
+      color: rgb(161, 161, 161);
+      border-color: #a3a3a3 !important;
+      border-radius: 0px !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 40px;
+      background-color: white;
+
+    }
+
+    #bigBtn1:hover {
+      background-image: url(/zsoltberes.github.io/bootstrap/img/Desserts.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 4s ease;
+      color: rgb(199, 199, 199);
+      text-decoration: none;
+    }
+
+    #bigBtn2{
+      border-top: solid 1px; 
+      width: 100%; 
+      height: 120px; 
+      text-align: center; 
+      text-transform: uppercase;
+    }
+      
+    #bigBtn2,
+    #bigBtn1:hover,
+    #bigBtn1:active,
+    #bigBtn1:visited,
+    #bigBtn1:focus {
+      color: rgb(161, 161, 161);
+      border-color: #a3a3a3 !important;
+      border-radius: 0px !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 40px;
+      background-color: white;
+    }
+
+    #bigBtn2:hover {
+      background-image: url(/zsoltberes.github.io/bootstrap/img/pizzawal.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 4s ease;
+      color: rgb(199, 199, 199);
+      text-decoration: none;
+    }
+
+    #bigBtn3{
+      border-top: solid 1px; 
+      border-bottom: solid 1px; 
+      width: 100%; height: 120px; 
+      text-align: center; 
+      text-transform: uppercase;
+    }
+ 
+    #bigBtn3,
+    #bigBtn1:hover,
+    #bigBtn1:active,
+    #bigBtn1:visited,
+    #bigBtn1:focus {
+      color: rgb(161, 161, 161);
+      border-color: #a3a3a3 !important;
+      border-radius: 0px !important;
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      padding: 40px;
+      background-color: white;
+    }
+
+    #bigBtn3:hover {
+      background-image: url(/zsoltberes.github.io/bootstrap/img/kokt.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 4s ease;
+      color: rgb(199, 199, 199);
+      text-decoration: none;
+    }
+
+    @media screen and (max-width:600px) {
+      .carousel-caption h6 {
+        position: relative;
+        font-size: 2rem;
+        right: 10%;
+        top: 30px;
+        text-align: center;
+
+      }
+    }
+
+    h6 {
+      font-size: 3.5rem;
+      padding: 0;
+      margin: 0;
+      width: 400px;
+      height: 200px;
+      text-transform: uppercase;
+      font-family: 'Poppins', sans-serif;
+      font-weight: lighter;
+
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 10%;
+      left: 4%;
+    }
+  </style>
+    
+    
     <!-- Optional JavaScript -->
     <script src="js/homerseklet.js"></script>
-    <script src="/zsoltberes.github.io/bootstrap/js/video.js"></script>
-
+    <script src="/zsoltberes.github.io/bootstrap/js/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+  
+  
+  </body>
+  
+  </html>
+    
     
 
-</body>
+      
+      
+       
+      
+ 
+      
 
-</html>
+
+
+  
+    
+
+
+
+
+       
+      
+
+
+
+
+   
+ 
+
+  
+  
+
+            
+            
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
